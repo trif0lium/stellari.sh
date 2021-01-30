@@ -5,5 +5,12 @@ authors = ["FleeingSunlight <gh@fleeingsunlight.dev>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+tonic = "0.3"
+prost = "0.6"
+tokio = { version = "0.2", features = ["macros"] }
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+
+[build-dependencies]
+tonic-build = "0.3"

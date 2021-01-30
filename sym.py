@@ -6,6 +6,7 @@ base = os.path.dirname(__file__)
 os.chdir(base)
 
 apps = [
+    "./apps/api-gateway",
     "./apps/konachan",
     "./apps/danbooru"
 ]

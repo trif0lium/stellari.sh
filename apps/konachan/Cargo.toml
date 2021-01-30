@@ -11,14 +11,6 @@ prost = "0.6"
 tokio = { version = "0.2", features = ["macros"] }
 reqwest = { version = "0.11", features = ["blocking", "json"] }
 serde = { version = "1.0", features = ["derive"] }
-# Add openssl-sys as a direct dependency so it can be cross compiled to
-# x86_64-unknown-linux-musl using the "vendored" feature below
-openssl-sys = "*"
 
 [build-dependencies]
 tonic-build = "0.3"
-
-[features]
-# Force openssl-sys to staticly link in the openssl library. Necessary when
-# cross compiling to x86_64-unknown-linux-musl.
-vendored = ["openssl-sys/vendored"]

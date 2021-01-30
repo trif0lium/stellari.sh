@@ -14,6 +14,7 @@ import { KonachanService } from './konachan.service';
         options: {
           package: KONACHAN_V1_PACKAGE_NAME,
           protoPath: join(__dirname, '../../apis/konachan.proto'),
+          url: process.env.SVC_KONACHAN_GRPC_URL,
         },
       },
     ]),

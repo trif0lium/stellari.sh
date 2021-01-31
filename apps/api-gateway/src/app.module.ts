@@ -9,6 +9,7 @@ import { resolve } from 'path';
   imports: [
     ConfigModule.forRoot({
       envFilePath: [resolve(__dirname, '../.env')],
+      isGlobal: true,
     }),
     KonachanModule,
   ],

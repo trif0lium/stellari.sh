@@ -3,4 +3,5 @@ mkdir -p src/generated
 protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto \
   --ts_proto_out=./src/generated \
   ./apis/konachan.proto \
+  ./apis/danbooru.proto \
   --ts_proto_opt=nestJs=true

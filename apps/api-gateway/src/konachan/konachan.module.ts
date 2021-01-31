@@ -13,7 +13,7 @@ import { KonachanService } from './konachan.service';
         name: KONACHAN_V1_PACKAGE_NAME,
         imports: [ConfigModule],
         inject: [ConfigService],
-        useFactory: async (configService: ConfigService) => ({
+        useFactory: async (configService: ConfigService<NodeJS.ProcessEnv>) => ({
           name: KONACHAN_V1_PACKAGE_NAME,
           transport: Transport.GRPC,
           options: {

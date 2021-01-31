@@ -7,28 +7,22 @@ import "google/protobuf/wrappers.proto";
 option java_package = "trif0lium.stellarish.nhentai"
 option java_multiple_files = true;
 
-service Gallery {
-  rpc Posts(PostsRequest) returns (PostsResponse) {}
+service NH {
+  rpc Gallery(GalleryRequest) returns (GalleryResponse) {}
 }
 
-enum Rating {
-  ALL = 0;
-  SAFE = 1;
-  QUESTIONABLE = 2;
-  EXPLICIT = 3;
+message GalleryRequest {
+  int32 id = 1;
 }
 
-message PostsRequest {
-  repeated string tags = 1;
-}
-
-message PostsResponse {
-  message Post {
-    int32 id = 1;
-    repeated string tags = 2;
-    string file_url = 3;
-    int32 created_at = 4;
+message GalleryResponse {
+  message Title {
+    string japanese = 1;
+    string english = 2;
+    string pretty = 3;
   }
 
-  repeated Post posts = 1;
+  int32 id = 1;
+  int32 media_id = 2;
+  Title title = 3;
 }

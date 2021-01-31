@@ -4,6 +4,8 @@ package danbooru.v1;
 
 import "google/protobuf/wrappers.proto";
 
+option go_package = ".;danbooru_v1";
+
 service Gallery {
   rpc Posts(PostsRequest) returns (PostsResponse) {}
 }

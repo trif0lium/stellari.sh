@@ -3,11 +3,12 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { KonachanModule } from './konachan/konachan.module';
+import { resolve } from 'path';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.env.development', '.env'],
+      envFilePath: [resolve(__dirname, '../.env')],
     }),
     KonachanModule,
   ],

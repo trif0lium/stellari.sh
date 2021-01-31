@@ -8,7 +8,8 @@ os.chdir(base)
 apps = [
     "./apps/api-gateway",
     "./apps/konachan",
-    "./apps/danbooru"
+    "./apps/danbooru",
+    "./apps/nhentai/src/main"
 ]
 
 def sym(dst):
@@ -19,4 +20,7 @@ def sym(dst):
     os.symlink(relative_path, "apis")
 
 for app in apps:
-    sym(app)
+    try:
+        sym(app)
+    except:
+        pass

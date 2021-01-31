@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package danbooru.v1;
+
+import "google/protobuf/wrappers.proto";
+
+service Gallery {
+  rpc Posts(PostsRequest) returns (PostsResponse) {}
+}
+
+enum Rating {
+  ALL = 0;
+  SAFE = 1;
+  QUESTIONABLE = 2;
+  EXPLICIT = 3;
+}
+
+message PostsRequest {
+  repeated string tags = 1;
+}
+
+message PostsResponse {
+  message Post {
+    int32 id = 1;
+    repeated string tags = 2;
+    string file_url = 3;
+    int32 created_at = 4;
+  }
+
+  repeated Post posts = 1;
+}

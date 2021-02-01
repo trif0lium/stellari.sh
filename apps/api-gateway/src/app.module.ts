@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { KonachanModule } from './konachan/konachan.module';
 import { resolve } from 'path';
 import { DanbooruModule } from './danbooru/danbooru.module';
+import { NhentaiModule } from './nhentai/nhentai.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { DanbooruModule } from './danbooru/danbooru.module';
     }),
     KonachanModule,
     DanbooruModule,
+    NhentaiModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -1,0 +1,6 @@
+name: stellaris
+description: A Google Kubernetes Engine (GKE) cluster
+runtime: nodejs
+template:
+  config:
+    gcp:project:

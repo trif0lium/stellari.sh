@@ -4,6 +4,7 @@ import { NhentaiController } from './nhentai.controller';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 import { NHENTAI_V1_PACKAGE_NAME } from 'src/generated/apis/nhentai';
 import { ConfigService } from '@nestjs/config';
+import { join } from 'path';
 
 @Module({
   imports: [

@@ -7,6 +7,8 @@
     "@pulumi/gcp": "^4.9.1",
     "@pulumi/kubernetes": "^2.7.8",
     "@pulumi/pulumi": "^2.19.0",
-    "@pulumi/random": "^3.0.2"
+    "@pulumi/random": "^3.0.2",
+    "@types/ejs": "^3.0.5",
+    "ejs": "^3.1.5"
   }
 }

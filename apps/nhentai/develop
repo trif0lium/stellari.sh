@@ -1,0 +1,2 @@
+mvn clean package
+mvn install exec:java -Dexec.mainClass=trif0lium.stellarish.nhentai.App

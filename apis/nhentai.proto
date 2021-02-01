@@ -4,7 +4,7 @@ package nhentai.v1;
 
 import "google/protobuf/wrappers.proto";
 
-option java_package = "trif0lium.stellarish.nhentai"
+option java_package = "trif0lium.stellarish.nhentai";
 option java_multiple_files = true;
 
 service NH {

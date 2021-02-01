@@ -23,7 +23,7 @@ export const cluster = new gcp.container.Cluster(
     ipAllocationPolicy: {},
     networkPolicy: {
       enabled: true,
-      provider: "CALIC0",
+      provider: "CALICO",
     },
     privateClusterConfig: {
       enablePrivateEndpoint: false,

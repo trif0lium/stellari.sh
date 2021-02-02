@@ -25,7 +25,7 @@ jobs:
         if: steps.changed-api-gateway.outputs.changed == 'true'
         id: docker-meta
         with:
-          images: trif0lium/stellari.sh/api-gateway
+          images: trif0lium/stellarish/api-gateway
           tag-sha: true
       - uses: docker/build-push-action@v2
         if: steps.changed-api-gateway.outputs.changed == 'true'

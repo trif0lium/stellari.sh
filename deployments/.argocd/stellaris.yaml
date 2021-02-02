@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/trif0lium/stellari.sh.git
     targetRevision: HEAD
-    path: deployments/stellaris
+    path: deployments/stellaris/envs/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: default

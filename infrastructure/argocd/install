@@ -1,0 +1,3 @@
+cd $(dirname $0)
+kustomize build setup | kubectl apply -f-
+kubectl apply -k .

@@ -1,0 +1,2 @@
+mkdir -p ~/.creds
+ssh-keygen -t rsa -f ~/.creds/stl -N "" -q

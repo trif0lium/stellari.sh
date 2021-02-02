@@ -1,0 +1,5 @@
+cd $(dirname $0)
+istioctl install
+kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.1.0/cert-manager.yaml
+kubectl apply -k ./gateways
+kubectl apply -k ./cert-manager

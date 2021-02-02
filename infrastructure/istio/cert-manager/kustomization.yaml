@@ -1,0 +1,5 @@
+namespace: istio-system
+resources:
+  - ./issuers/letsencrypt-staging.yaml
+  - ./issuers/letsencrypt-prod.yaml
+  - ./certificates/ingress-prod.yaml

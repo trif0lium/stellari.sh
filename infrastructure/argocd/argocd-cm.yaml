@@ -8,3 +8,6 @@ metadata:
 data:
   repositories: |
     - url: https://github.com/trif0lium/stellari.sh.git
+      sshPrivateKeySecret:
+        name: repository-secret
+        key: deployKey

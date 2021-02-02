@@ -10,3 +10,4 @@ spec:
   commonName: whoami.stl.fleeingsunlight.dev
   dnsNames:
     - whoami.stl.fleeingsunlight.dev
+    - argocd.stl.fleeingsunlight.dev

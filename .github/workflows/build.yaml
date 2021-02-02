@@ -2,10 +2,7 @@ name: Build
 on:
   push:
     paths:
-      - apps/api-gateway
-      - apps/konachan
-      - apps/danbooru
-      - apps/nhentai
+      - "apps/**"
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -1,8 +1,8 @@
 FROM node:latest as build-env
 WORKDIR /app/api-gateway
-RUN yarn install
 ADD ./apps/api-gateway /app/api-gateway
 ADD ./apis /apis
+RUN yarn install
 RUN yarn run build
 
 FROM node:14-alpine
